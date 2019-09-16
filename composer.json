@@ -1,5 +1,5 @@
 {
-    "name": "apimatic/releansapi",
+    "name": "releans/releansapi",
     "type": "library",
     "description": "The Releans SDK enables developers to use Releans Services in their code. You can get started in minutes.",
     "keywords": ["Releans API","API","SDK"],
