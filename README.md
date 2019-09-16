@@ -2,7 +2,7 @@
 
 The Releans SDK enables developers to use Releans Services in their code. You can get started in minutes.
 
-```composer require releans/php-client-sdk```
+```composer require releans/releansapi```
 
 ## Initialization
 
@@ -110,7 +110,7 @@ function createSendSMSMessage(
         $accept,
         $senderId,
         $mobileNumber,
-        $message)
+        $body)
 ```
 
 #### Parameters
@@ -120,7 +120,7 @@ function createSendSMSMessage(
 | accept |  ``` Required ```  | TODO: Add a parameter description |
 | senderId |  ``` Required ```  | Sender id to send the message from. |
 | mobileNumber |  ``` Required ```  | The mobile number supposed to receive the message. |
-| message |  ``` Required ```  | Message text. |
+| body |  ``` Required ```  | Message text. |
 
 
 
@@ -130,12 +130,26 @@ function createSendSMSMessage(
 $accept = 'Accept';
 $senderId = 'senderId';
 $mobileNumber = 'mobileNumber';
-$message = 'message';
+$body = 'message';
 
-$result = $message->createSendSMSMessage($accept, $senderId, $mobileNumber, $message);
+$result = $message->createSendSMSMessage($accept, $senderId, $mobileNumber, $body);
 
 ```
 
+
+#### Full Code Example Usage
+```php
+$oAuthAccessToken = 'YOUR_API_KEY'; // OAuth 2.0 Access Token
+$client = new ReleansAPIClient($oAuthAccessToken);
+$message = $client->getMessage();
+$accept = 'Accept';
+$senderId = 'Sender_Name_ID';
+$mobileNumber = '+44123456789';
+$body = 'Hello from Releans';
+
+$result = $message->createSendSMSMessage($accept, $senderId, $mobileNumber, $body);
+
+```
 
 [Back to List of Controllers](#list_of_controllers)
 
