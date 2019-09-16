@@ -12,6 +12,7 @@
             "homepage": "https://releans.com/talk-to-sales"
         }
     ],
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0",
         "ext-curl": "*",
