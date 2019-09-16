@@ -1,0 +1,49 @@
+{
+<<<<<<< HEAD
+    "name": "apimatic/releansapi",
+    "type": "library",
+    "description": "The Releans SDK enables developers to use Releans Services in their code. You can get started in minutes.",
+    "keywords": ["Releans API","API","SDK"],
+    "homepage": "https://releans.com/talk-to-sales",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Releans Support",
+            "email": "support@releans.com",
+            "homepage": "https://releans.com/talk-to-sales"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+=======
+    "name": "releans/php-client-sdk",
+    "description": "The Releans SDK enables developers to use Releans Services in their code. You can get started in minutes.",
+    "type": "library",
+    "require": {
+        "ext-curl": "^7.1",
+        "php": ">=5.4.0",
+        "ext-json": "^1.5",
+        "ext-mbstring": "^7.1",
+>>>>>>> a6669da02ee6aa6ee8bb2c8df1c1e27296283790
+        "mashape/unirest-php": "~3.0.1",
+        "apimatic/jsonmapper": "~1.3.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.7",
+        "phpunit/phpunit": "4.8.*"
+    },
+<<<<<<< HEAD
+    "autoload": {
+        "psr-4": {
+            "ReleansAPILib\\": "src/"
+        }
+    }
+}
+=======
+    "license": "MIT",
+    "minimum-stability": "dev"
+}
+>>>>>>> a6669da02ee6aa6ee8bb2c8df1c1e27296283790
