@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting started
 
 The Releans SDK enables developers to use Releans Services in their code. You can get started in minutes.
@@ -12,7 +11,7 @@ In order to setup authentication and initialization of the API client, you need 
 
 | Parameter | Description |
 |-----------|-------------|
-| oAuthAccessToken | OAuth 2.0 Access Token |
+| oAuthAccessToken | Your API KEY |
 
 
 
@@ -572,4 +571,3 @@ $result = $balance->getBalance($accept);
 
 
 
->>>>>>> a6669da02ee6aa6ee8bb2c8df1c1e27296283790
