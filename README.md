@@ -55,7 +55,7 @@ function getAllMessages($accept)
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| accept |  ``` Required ```  | TODO: Add a parameter description |
+| accept |  ``` Required ```  | */* |
 
 
 
@@ -84,8 +84,8 @@ function getViewMessage(
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| id |  ``` Required ```  | TODO: Add a parameter description |
-| accept |  ``` Required ```  | TODO: Add a parameter description |
+| id |  ``` Required ```  | Message ID |
+| accept |  ``` Required ```  | */* |
 
 
 
@@ -117,7 +117,7 @@ function createSendSMSMessage(
 
 | Parameter | Tags | Description |
 |-----------|------|-------------|
-| accept |  ``` Required ```  | TODO: Add a parameter description |
+| accept |  ``` Required ```  | Accept |
 | senderId |  ``` Required ```  | Sender id to send the message from. |
 | mobileNumber |  ``` Required ```  | The mobile number supposed to receive the message. |
 | body |  ``` Required ```  | Message text. |
@@ -139,6 +139,10 @@ $result = $message->createSendSMSMessage($accept, $senderId, $mobileNumber, $bod
 
 #### Full Code Example Usage
 ```php
+use ReleansAPILib\APIException;
+use ReleansAPILib\ReleansAPIClient;
+
+
 $oAuthAccessToken = 'YOUR_API_KEY'; // OAuth 2.0 Access Token
 $client = new ReleansAPIClient($oAuthAccessToken);
 $message = $client->getMessage();
