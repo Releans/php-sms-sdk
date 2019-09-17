@@ -3,13 +3,12 @@
 The Releans SDK enables developers to use Releans Services in their code. You can get started in minutes.
 
 ```composer require releans/releansapi```
-
-## Initialization
-
 ## Create Releans Account
 
 First, [sign up for a Releans account](https://platform.releans.com/site/signup) if you don't already have one, and make a note of your API key on the dashboard API page.
 
+
+## Initialization
 
 ### Authentication
 In order to setup authentication and initialization of the API client, you need the following information.
